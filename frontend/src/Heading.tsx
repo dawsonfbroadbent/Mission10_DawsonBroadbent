@@ -2,6 +2,7 @@ import './Heading.css';
 
 function Heading() {
     return (
+        // Static page header that explains what data the app is showing.
         <header className="heading">
             <div className="heading__content">
                 <h1 className="heading__title">Bowling League Directory</h1>

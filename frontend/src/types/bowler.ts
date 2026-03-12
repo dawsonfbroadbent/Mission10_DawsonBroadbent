@@ -1,3 +1,4 @@
+// Shared shape for bowler records returned by the API and rendered in the UI.
 export type bowler = {
     bowlerId: number;
     bowlerName: string;
@@ -5,6 +6,6 @@ export type bowler = {
     bowlerAddress: string;
     bowlerCity: string;
     bowlerState: string;
-    bowlerZipCode: string;
+    bowlerZip: string;
     bowlerPhoneNumber: string;
 };

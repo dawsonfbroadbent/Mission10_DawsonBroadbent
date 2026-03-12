@@ -1,13 +1,14 @@
-
 import { useEffect, useState } from 'react';
 import './BowlerList.css';
 import type {bowler} from './types/bowler';
 
 function BowlerList() { 
 
+    // Stores the bowlers returned by the backend API.
     const [bowlers, setBowlers] = useState<bowler[]>([]);
 
     useEffect(() => {
+        // Loads the filtered bowler list once when the component first renders.
         const fetchBowler = async () => {
             const response = await fetch('https://localhost:5000/api/Bowlers')
             const data = await response.json();
@@ -34,6 +35,7 @@ function BowlerList() {
                     </thead>
                     <tbody>
                         {
+                            // Each API result becomes one table row in the directory.
                             bowlers.map((bowler) => (
                                 <tr key={bowler.bowlerId}>
                                     <td>{bowler.bowlerName}</td>
@@ -41,7 +43,7 @@ function BowlerList() {
                                     <td>{bowler.bowlerAddress}</td>
                                     <td>{bowler.bowlerCity}</td>
                                     <td>{bowler.bowlerState}</td>
-                                    <td>{bowler.bowlerZipCode}</td>
+                                    <td>{bowler.bowlerZip}</td>
                                     <td>{bowler.bowlerPhoneNumber}</td>
                                 </tr>
                             ))

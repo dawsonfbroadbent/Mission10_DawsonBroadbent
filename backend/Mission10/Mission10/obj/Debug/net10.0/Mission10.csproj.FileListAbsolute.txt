@@ -146,3 +146,4 @@
 /Users/dawsonb/RiderProjects/Mission10/backend/Mission10/Mission10/obj/Debug/net10.0/Mission10.pdb
 /Users/dawsonb/RiderProjects/Mission10/backend/Mission10/Mission10/obj/Debug/net10.0/Mission10.genruntimeconfig.cache
 /Users/dawsonb/RiderProjects/Mission10/backend/Mission10/Mission10/obj/Debug/net10.0/ref/Mission10.dll
+/Users/dawsonb/RiderProjects/Mission10/backend/Mission10/Mission10/obj/Debug/net10.0/Mission10.sourcelink.json
