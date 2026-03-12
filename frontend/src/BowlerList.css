@@ -1,0 +1,108 @@
+.bowler-list {
+  width: 100%;
+}
+
+.bowler-list__title {
+  margin: 2rem 0 1.1rem;
+  color: var(--accent-deep);
+  font-family: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  font-size: clamp(1.9rem, 3vw, 2.6rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.bowler-list__table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--surface-border);
+  border-radius: 22px;
+  background: var(--surface);
+  box-shadow: var(--surface-shadow);
+}
+
+.bowler-list__table-wrap::-webkit-scrollbar {
+  height: 10px;
+}
+
+.bowler-list__table-wrap::-webkit-scrollbar-track {
+  background: rgba(215, 232, 244, 0.55);
+}
+
+.bowler-list__table-wrap::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(31, 95, 139, 0.35);
+}
+
+.bowler-list__table {
+  width: 100%;
+  min-width: max-content;
+  border-collapse: separate;
+  border-spacing: 0;
+  white-space: nowrap;
+}
+
+.bowler-list th,
+.bowler-list td {
+  padding: 1rem 1.2rem;
+  text-align: left;
+}
+
+.bowler-list thead th {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(180deg, #1f5f8b 0%, #184a6d 100%);
+  color: #f7fbff;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.bowler-list tbody td {
+  border-bottom: 1px solid var(--row-border);
+  color: var(--page-text);
+  font-size: 0.96rem;
+}
+
+.bowler-list tbody tr:nth-child(even) td {
+  background-color: rgba(246, 249, 252, 0.95);
+}
+
+.bowler-list tbody tr:hover td {
+  background-color: #edf5fb;
+}
+
+.bowler-list tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.bowler-list tbody td:first-child,
+.bowler-list tbody td:nth-child(2) {
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .bowler-list__title {
+    margin-top: 1.5rem;
+  }
+
+  .bowler-list th,
+  .bowler-list td {
+    padding: 0.9rem 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .bowler-list__title {
+    font-size: 1.7rem;
+  }
+
+  .bowler-list__table-wrap {
+    border-radius: 18px;
+  }
+
+  .bowler-list thead th,
+  .bowler-list tbody td {
+    font-size: 0.88rem;
+  }
+}

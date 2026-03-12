@@ -1,0 +1,55 @@
+:root {
+  font-family: 'Avenir Next', 'Segoe UI', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #17324d;
+  background-color: #e9eff5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --page-text: #17324d;
+  --muted-text: #627689;
+  --surface: rgba(255, 255, 255, 0.94);
+  --surface-border: rgba(94, 121, 146, 0.18);
+  --surface-shadow: 0 20px 48px rgba(22, 44, 68, 0.12);
+  --surface-shadow-soft: 0 12px 28px rgba(22, 44, 68, 0.08);
+  --accent: #1f5f8b;
+  --accent-deep: #123b5d;
+  --accent-soft: #d7e8f4;
+  --row-border: #e2eaf2;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  background-color: #e9eff5;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--page-text);
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(248, 251, 255, 0.92) 25%,
+      rgba(233, 239, 245, 0.9) 58%
+    ),
+    linear-gradient(180deg, #f6faff 0%, #eef3f8 42%, #e6edf4 100%);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}

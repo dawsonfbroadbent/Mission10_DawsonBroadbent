@@ -1,0 +1,12 @@
+#root {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2rem 0 3.5rem;
+}
+
+@media (max-width: 900px) {
+  #root {
+    width: min(100%, calc(100% - 1rem));
+    padding: 1rem 0 2.5rem;
+  }
+}
